@@ -23,37 +23,119 @@
 <body class="font-sora ">
     <!-- Navbar -->
     <section class="bg-[#FFF9F4]">
-        <div class="navbar lg:max-w-[1320px] lg:max-h-[749px] mx-auto">
-            <div class="navbar-start ">
-                
-                <a class="font-semibold text-xl flex items-center gap-2">
-                    <img class="size-8" src="assets/logo-header.png" alt="">
-                    <div>
-                        Browse<span class="text-[#FFDC26]">4</span>Pets
-                    </div>
-                </a>
+      <div class="navbar lg:max-w-[1320px]  mx-auto  flex justify-between ">
+          <div class="navbar-start ">
+              
+              <a class="font-semibold text-xl flex items-center gap-2">
+                  <img class="size-8" src="assets/logo-header.png" alt="">
+                  <div class="hidden lg:flex">
+                      Browse<span class="text-[#FFDC26]">4</span>Pets
+                  </div>
+              </a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+              <ul class="font-semibold menu menu-horizontal px-1">
+                  <li><a>Find a pet</a></li>
+                  <li>
+                  <a href="">Breeds</a>
+                  </li>
+                  <li><a>Contact us</a></li>
+              </ul>
+          </div>
+          <div class="navbar-end hidden lg:flex">
+              <img class="size-5 m-2" src="assets/notify.png" alt="">
+              <img class="size-5 m-2 mr-5" src="assets/search.png" alt="">
+              <button class=" border-2 border-[#FFDC26] py-[4px] px-6 rounded-xl  hover:bg-gray-200 duration-300">
+                  Login
+              </button>
+              <button class="m-2 bg-[#FFDC26] py-[6px] px-6 rounded-xl hover:bg-gray-200 duration-300 ">
+                  Register
+              </button>
+          </div>
+          <div class="dropdown">
+            
+            <div tabindex="0" role="button" class=" btn-ghost lg:hidden">
+              <img class=" min-h-6 min-w-6" src="assets/bars.png" alt="">
             </div>
-            <div class="navbar-center hidden lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a>Find a pet</a></li>
-                    <li>
-                    <a href="">Breeds</a>
-                    </li>
-                    <li><a>Contact us</a></li>
-                </ul>
-            </div>
-            <div class="navbar-end">
-                <img class="size-5 m-2" src="assets/notify.png" alt="">
-                <img class="size-5 m-2 mr-5" src="assets/search.png" alt="">
-                <button class=" border-2 border-[#FFDC26] py-1.5 px-6 rounded-xl m-0 ">
-                    Login
-                </button>
-                <button class="m-2 bg-[#FFDC26] py-[8px] px-6 rounded-xl m-0 ">
-                    Register
-                </button>
-            </div>
-                    
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 right-2 w-32 p-2 shadow text-right">
+              <li><a>Find a pet</a></li>
+              <li>
+              <a>Breeds</a>
+              </li>
+              <li><a>Contact us</a></li>
+            </ul>
+          </div>
+      </div>         
+    </section>
+
+    <!-- banner -->
+    <section class="relative lg:max-w-[1320px] lg:min-h-[749px] mx-auto lg:bg-[url('assets/cat-big.png')]">
+        <div class="lg:w-[672px] lg:ml-0 mx-auto w-[458px] mt-20">
+          <h1 class="font-adlam text-4xl lg:text-6xl ">Pamper Your Pet, <br> Because They Deserve <br> the best</h1>
+          <p class="font-sora opacity-70 text-1xl leading-7 py-3">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+          <button class=" bg-[#FFDC26] py-[6px] px-6 rounded-xl hover:bg-gray-200 duration-300 ">
+            Find a pet
+          </button>
+        </div>
+        <div class="">
+          <img class="lg:hidden top-[160px] absolute z-[-1] " src="assets/cat-big.png" alt="">
         </div>
     </section>
+
+    <main class="w-[458px] lg:w-[1320px] mx-auto">
+      <section class="">
+        <h1 class="font-adlam text-3xl py-10 mt-60">Browse By Categories</h1>
+
+        <div class="grid lg:grid-cols-6 grid-cols-2 gap-y-7">
+          <div class="w-[200px] h-[254px] bg-[#F9DF8A] rounded-xl flex justify-center items-center gap-4 flex-col">
+            <div class="bg-white p-5 rounded-full"><img src="assets/dog-cartoon.png" alt=""></div>
+            <h3 class="font-adlam text-[20px]">Dog</h3>
+            <p class="text-sm ">
+              4 Items
+            </p>
+          </div>
+          <div class="w-[200px] h-[254px] bg-[#F9DF8A] rounded-xl flex justify-center items-center gap-4 flex-col">
+            <div class="bg-white p-5 rounded-full"><img src="assets/fish-cartoon.png" alt=""></div>
+            <h3 class="font-adlam text-[20px]">Fish</h3>
+            <p class="text-sm ">
+              5 Items
+            </p>
+          </div>
+          <div class="w-[200px] h-[254px] bg-[#F9DF8A] rounded-xl flex justify-center items-center gap-4 flex-col">
+            <div class="bg-white p-5 rounded-full"><img src="assets/cat-cartoon.png" alt=""></div>
+            <h3 class="font-adlam text-[20px]">Cat</h3>
+            <p class="text-sm ">
+              3 Items
+            </p>
+          </div>
+          <div class="w-[200px] h-[254px] bg-[#F9DF8A] rounded-xl flex justify-center items-center gap-4 flex-col">
+            <div class="bg-white p-5 rounded-full"><img src="assets/bird-cartoon.png" alt=""></div>
+            <h3 class="font-adlam text-[20px]">Birds</h3>
+            <p class="text-sm ">
+              9 Items
+            </p>
+          </div>
+          <div class="w-[200px] h-[254px] bg-[#F9DF8A] rounded-xl flex justify-center items-center gap-4 flex-col">
+            <div class="bg-white p-5 rounded-full"><img src="assets/mouse-cartoon.png" alt=""></div>
+            <h3 class="font-adlam text-[20px]">Small pet</h3>
+            <p class="text-sm ">
+              4 Items
+            </p>
+          </div>
+          <div class="w-[200px] h-[254px] bg-[#F9DF8A] rounded-xl flex justify-center items-center gap-4 flex-col">
+            <div class="bg-white p-5 rounded-full"><img src="assets/rabbit-cartoon.png" alt=""></div>
+            <h3 class="font-adlam text-[20px]">Rabbit</h3>
+            <p class="text-sm ">
+              2 Items
+            </p>
+          </div>
+        </div>
+
+      </section>
+    </main>
+
+    
 </body>
 </html>
