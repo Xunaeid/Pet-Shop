@@ -18,6 +18,52 @@
         .font-adlam{
             font-family: "ADLaM Display", serif;
         }
+
+
+
+        .wrapper{
+            box-sizing: content-box;
+            background-color: #ffffff;
+            height: 70px;
+            display: flex;
+            border-radius: 8px;
+        }
+        .pets{
+            overflow: hidden;
+        }
+        .pet{
+            display: block;
+            height: 100%;
+            padding-left: 10px;
+            color: #0e6ffc;
+            animation: spin_words 7s infinite;
+        }
+        @keyframes spin_words{
+            10%{
+                transform: translateY(-100%);
+            }
+            25%{
+                transform: translateY(-90%);
+            }
+            35%{
+                transform: translateY(-200%);
+            }
+            50%{
+                transform: translateY(-190%);
+            }
+            60%{
+                transform: translateY(-300%);
+            }
+            75%{
+                transform: translateY(-290%);
+            }
+            85%{
+                transform: translateY(-400%);
+            }
+            100%{
+                transform: translateY(-390%);
+            }
+          }
     </style>
 
 </head>
@@ -76,11 +122,26 @@
     <!-- banner -->
     <section class=" lg:min-w-[1320px] lg:min-h-[749px] w-[359px] mx-auto  lg:bg-[url('assets/cat-big.png')]">
         <div class="lg:w-[672px] lg:ml-0  mt-20">
+          
           <h1 class="font-adlam text-3xl lg:text-6xl ">Pamper Your Pet, <br> Because They Deserve <br> the best</h1>
-          <p class="font-sora opacity-70 text-1xl leading-7 py-3">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
-          <button class=" bg-[#fed921]  opacity-90 py-[6px] px-6 rounded-xl hover:bg-gray-200 duration-300 ">
-            Find a pet
-          </button>
+          <p class="font-sora opacity-70 text-1xl leading-7 pt-3">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+
+          <div class="flex items-center gap-3">
+            <button class=" bg-[#fed921] h-10 opacity-90 py-[6px] px-6 rounded-xl hover:bg-gray-200 duration-300 ">
+              Find a pet
+            </button>
+            <!-- animation -->
+            <div class="wrapper pt-5">
+              <div class="pets ">
+                  <span class="pet"><img class="w-[70%]" src="assets/bird-cartoon.png" alt=""></span>
+                  <span class="pet"><img class="w-[70%]" src="assets/cat-cartoon.png" alt=""></span>
+                  <span class="pet"><img class="w-[70%]" src="assets/dog-cartoon.png" alt=""></span>
+                  <span class="pet"><img class="w-[70%]" src="assets/rabbit-cartoon.png" alt=""></span>
+                  <span class="pet"><img class="w-[70%]" src="assets/fish-cartoon.png" alt=""></span>
+              </div>
+            </div>
+          </div>
+
         </div>
         <div >
           <img class="lg:hidden mt-[-80px] wd-[100%] z-[1]" src="assets/cat-big.png" alt="">
